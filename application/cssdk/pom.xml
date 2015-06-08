@@ -11,6 +11,60 @@
 	<properties>
 		<spring.version>4.0.3.RELEASE</spring.version>
 	</properties>
+	
+    <repositories>
+        <repository>
+            <id>aws-cpd-mavenrepo-release</id>
+            <name>AWS CPD Release Repository</name>
+            <url>https://s3.amazonaws.com/preproduction-cloud.private.repos/maven/release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>aws-cpd-mavenrepo-snapshot</id>
+            <name>AWS CPD Snapshot Repository</name>
+            <url>https://s3.amazonaws.com/preproduction-cloud.private.repos/maven/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>repository.jboss.org-public</id>
+            <name>JBoss.org Maven repository</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aws-cpd-mavenrepo-release</id>
+            <name>AWS CPD Release Repository</name>
+            <url>https://s3.amazonaws.com/preproduction-cloud.private.repos/maven/release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>aws-cpd-mavenrepo-snapshot</id>
+            <name>AWS CPD Snapshot Repository</name>
+            <url>https://s3.amazonaws.com/preproduction-cloud.private.repos/maven/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 	<dependencies>
 
