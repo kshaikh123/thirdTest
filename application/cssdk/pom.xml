@@ -104,7 +104,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>SpringMVC</finalName>
+		<finalName>cssdk</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
